@@ -350,3 +350,4 @@ E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcore
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.dll
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.pdb
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
+E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.csprojAssemblyReference.cache
