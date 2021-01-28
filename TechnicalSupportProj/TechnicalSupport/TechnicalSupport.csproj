@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Icons\Footer\telegram.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Icons\Footer\telegram.png" />
   </ItemGroup>
 
 </Project>
