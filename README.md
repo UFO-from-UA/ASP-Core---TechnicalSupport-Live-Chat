@@ -18,3 +18,4 @@ Some info
 
 * [stackoverflow](https://stackoverflow.com/) 
 * [MSDN](https://docs.microsoft.com/ru-ru/) 
+* [w3school](https://www.w3schools.com/) 

@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - TechnicalSupport</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/_chat.css" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -31,10 +33,17 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            <button onclick="ToggleChat()" id="ChatOpenButton" title="Open Chat"> <i class="fa fa-comments"></i></button>
         </main>
     </div>
-
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+            <div class="user-chat-container" id="user-chat-container">
+                @await Html.PartialAsync("_Chat")
+            </div>
+        </main>
+    </div>
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - TechnicalSupport
@@ -45,11 +54,14 @@
                     <li><a title="Telegram" href="tg://resolve?domain=yuhim93"> <img src="~/Icons/Footer/telegram.png" alt="Telegram" />  </a></li>
                 </ul>
             </div>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+    <script src="~/js/User.js"></script>
+    <script src="~/js/_chatUser.js"></script>
 </body>
 </html>
