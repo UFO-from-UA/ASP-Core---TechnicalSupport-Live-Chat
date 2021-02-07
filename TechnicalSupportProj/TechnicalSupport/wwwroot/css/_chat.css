@@ -99,6 +99,10 @@ span.closeChat:hover, span.closeChat:focus, span.minimizeChat:hover, span.minimi
     cursor: pointer;
 }
 
+.chat-messages{
+    padding-bottom:3rem;
+}
+
 .chat.header {
     background: red;
     position: sticky;
@@ -117,19 +121,24 @@ div.chat.footer {
     position: sticky;
     bottom: 0;
     background: red;
+    line-height:unset;
 }
 
 div.chat-input {
     position:relative;
     left:0;
+    line-height:unset;
     /*position:sticky;
     background:red;
     bottom:0;*/
 }
 #chat-input {
+    color:black;
     background: #f4f7f9;
-    width: 90%;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     height: 47px;
     padding-top: 10px;
     padding-right: 50px;
@@ -139,7 +148,6 @@ div.chat-input {
     resize: none;
     outline: none;
     border: 1px solid #ccc;
-    color: #888;
     border-top: none;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -147,9 +155,9 @@ div.chat-input {
 }
 
 .chat-submit {
-    position: relative;
-    bottom: 3px;
-    right: 10px;
+    position: absolute;
+    bottom: .4rem;
+    right: 2%;
     background: transparent;
     box-shadow: none;
     border: none;
@@ -158,6 +166,8 @@ div.chat-input {
     width: 35px;
     height: 35px;
 }
+
+
 
 /*Open close system
 --------------------------------------------------------------------------------    */

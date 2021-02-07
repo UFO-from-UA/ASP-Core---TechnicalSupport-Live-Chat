@@ -12,13 +12,12 @@ function Init() {
 
     RegisterModal();
     RegisterInput();
-    //addMessage('s', 'first', 'username', 'sometimes');
-
 }
 
 
 function ToggleChat(){
     $("#user-chat-container").toggle();
+    $("#ChatOpenButton").toggle();
 }
 
 function CloseChat() {
@@ -61,6 +60,16 @@ function RegisterInput() {
         }, 1000);
 
     });
+    $("#chat-input").keyup("keyup", function (event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("chat-submit").click();
+        }
+    });
+
 }
 
 function addMessage(msg, type, name, time) {
@@ -84,3 +93,4 @@ function addMessage(msg, type, name, time) {
     $(".chat-messages").stop().animate({ scrollTop: $(".chat-messages")[0].scrollHeight }, 1000);
 
 }
+
