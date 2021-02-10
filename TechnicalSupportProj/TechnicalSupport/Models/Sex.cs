@@ -7,7 +7,7 @@ namespace TechnicalSupport.Models
 {
     public class Sex
     {
-        public int SexId { get; set; }
+        public int Id { get; set; }
         public string SexName { get; set; }
     }
 }
