@@ -1,32 +1,45 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using TechnicalSupport.Models;
+using System.Threading.Tasks;
 using TechnicalSupport.Data;
+using TechnicalSupport.Models;
 
 namespace TechnicalSupport.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private GL_SupportContext _db;
-        
-        public HomeController(ILogger<HomeController> logger)
+        public static ChatContext _context;
+       
+        public static Dictionary<string, string> useremail;
+        public HomeController(ChatContext context, IHubContext<MessageHub> hubContext)
         {
-            _logger = logger;
-            //_db = configuration.GetConnectionString("DefaultConnection");
-            //Сделать контроллер где  будет бд
-            _db = new GL_SupportContext(new Microsoft.EntityFrameworkCore.DbContextOptions<GL_SupportContext>());
+            _context = context;
+
+            useremail = new Dictionary<string, string>();
+            foreach (var t in _context.Employees)
+            {
+                useremail.Add(t.Email, t.Id.ToString());
+
+            }
+
+            foreach (var t in _context.Users)
+            {
+                if(t.Email!=null)
+                useremail.Add(t.Email, t.Id.ToString());
+
+            }
+
         }
 
         public IActionResult Index()
         {
+            return RedirectToAction("Index", "Account");
 
-            //return View();
-            var asd = _db.WorkTimes.First().From.ToString();
-            return Content(content: asd);
         }
 
         public IActionResult Privacy()
