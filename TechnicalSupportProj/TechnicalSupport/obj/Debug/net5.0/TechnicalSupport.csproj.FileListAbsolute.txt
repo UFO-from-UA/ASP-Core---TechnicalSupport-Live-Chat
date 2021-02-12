@@ -387,3 +387,15 @@ E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\bin\Debug\net5.0\
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\яЯя\ВСЕ\GL\PROJ\TechnicalSupportProj\TechnicalSupport\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.csprojAssemblyReference.cache
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.AssemblyInfoInputs.cache
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.AssemblyInfo.cs
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.csproj.CoreCompileInputs.cache
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.RazorAssemblyInfo.cache
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.RazorAssemblyInfo.cs
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.dll
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\ref\TechnicalSupport.dll
+C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\net5.0\TechnicalSupport.pdb
