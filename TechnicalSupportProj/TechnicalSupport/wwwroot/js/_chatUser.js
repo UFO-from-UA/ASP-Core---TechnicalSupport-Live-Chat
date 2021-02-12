@@ -1,7 +1,7 @@
 ﻿
 "use strict";
 window.onload = Init();
-var user = new User();
+var user = new User(2);
 
 function Init() {
     $(".minimizeChat").click(ToggleChat);
@@ -22,11 +22,15 @@ function ToggleChat(){
 
 function CloseChat() {
     $("#Modal").toggle();
+    $('.reason-buttons').find('[data-reason="' + user.Reasone + '"]')[0].focus(); //.addClass('active')
+    //console.dir(sf);
 }
 
 function RegisterModal() {
     var modal = document.getElementById("Modal");
     var btn = document.getElementById("modalYes");
+   
+
     btn.addEventListener("click", function () {
         $("#Modal").toggle();
         ToggleChat();
@@ -94,3 +98,9 @@ function addMessage(msg, type, name, time) {
 
 }
 
+function SetReasone(elem) {
+    //console.dir(elem.dataset.reason);
+    user.Reasone = elem.dataset.reason; 
+    //console.dir(user.Reasone );
+
+}

@@ -1,28 +1,22 @@
 ﻿<div id="Modal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <span class="closeModal">&times;</span>
             <h2>Do you want to complete this dialog?</h2>
+            <span class="closeModal">&times;</span>
         </div>
         <div class="modal-body">
             <div class="row">
-                <label for="surname">Please select a reason <span class="req">*</span></label>
-                <div>
+                <label>Please select a reason <span class="req">*</span></label>
+                <div class="reason-buttons">
                     <ul>
                         <li>
-                            <button class="modalConfirn btn btn-5" tabindex="1"><h3>Solved</h3></button>
-                            @*<label for="status_lable_1">Solved</label>
-                                <input type="radio" id="status_lable_1" name="status" value="Solved">*@
+                            <button onclick="SetReasone(this)" class="modal-status btn btn-warning" tabindex="1" data-reason="1"><h3>Not solved</h3></button>
                         </li>
                         <li>
-                            <button class="modalConfirn btn btn-5" tabindex="2"><h3>Not solved</h3></button>
-                            @*<input type="radio" id="status_lable_2" name="status" value="Not solved">
-                                <label for="status_lable_2">Not solved</label>*@
+                            <button onclick="SetReasone(this)" class="modal-status btn btn-success" tabindex="2" data-reason="3"><h3>Solved</h3></button>
                         </li>
                         <li>
-                            <button class="modalConfirn btn btn-5" tabindex="3"><h3>waiting solution</h3></button>
-                            @*<input checked type="radio" id="status_lable_3" name="status" value="waiting solution">
-                                <label for="status_lable_3">Waiting solution</label>*@
+                            <button onclick="SetReasone(this)" class="modal-status btn btn-info" tabindex="3" data-reason="2"><h3>Waiting solution</h3></button>
                         </li>
                     </ul>
                 </div>
