@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TechnicalSupport.Data;
 
 namespace TechnicalSupport
 {
@@ -23,6 +25,9 @@ namespace TechnicalSupport
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<GL_SupportContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddControllersWithViews();
         }
 
@@ -45,6 +50,10 @@ namespace TechnicalSupport
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //app.SetBasePath(env.ContentRootPath);
+            //app.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            //app.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             app.UseEndpoints(endpoints =>
             {
