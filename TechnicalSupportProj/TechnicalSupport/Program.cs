@@ -1,12 +1,13 @@
+using Microsoft.AspNet.SignalR;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TechnicalSupport.Models;
 
 namespace TechnicalSupport
 {
@@ -14,7 +15,8 @@ namespace TechnicalSupport
     {
         public static void Main(string[] args)
         {
-            // seed init https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-5.0&tabs=visual-studio
+            GlobalHost.DependencyResolver.Register(typeof(IUserIdProvider), () => new CustomUserIdProvider());
+
             CreateHostBuilder(args).Build().Run();
         }
 
