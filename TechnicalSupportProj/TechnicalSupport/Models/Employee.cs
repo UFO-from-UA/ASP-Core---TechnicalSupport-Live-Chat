@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -21,6 +22,7 @@ namespace TechnicalSupport.Models
         public string Email { get; set; }
         public int Sex { get; set; }
         public int WorkTime { get; set; }
+        [Display(Name = "Password")]
         public byte[] PasswordHash { get; set; }
         public Guid EmployeeGuid { get; set; }
 

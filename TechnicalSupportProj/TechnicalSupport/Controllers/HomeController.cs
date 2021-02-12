@@ -16,7 +16,6 @@ namespace TechnicalSupport.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            //_db = configuration.GetConnectionString("DefaultConnection");
             //Сделать контроллер где  будет бд
             _db = new GL_SupportContext(new Microsoft.EntityFrameworkCore.DbContextOptions<GL_SupportContext>());
         }
@@ -24,7 +23,7 @@ namespace TechnicalSupport.Controllers
         public IActionResult Index()
         {
 
-            //return View();
+            return View();
             var asd = _db.WorkTimes.First().From.ToString();
             return Content(content: asd);
         }
