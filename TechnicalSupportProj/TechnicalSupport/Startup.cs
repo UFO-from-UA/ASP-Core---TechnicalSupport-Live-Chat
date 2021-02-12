@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,7 +11,10 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using TechnicalSupport.Data;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Authentication.Cookies;
+=======
+>>>>>>> 4c630cf751b01e777ddcfe93362b4aead5d63fca
 
 namespace TechnicalSupport
 {
@@ -26,6 +30,9 @@ namespace TechnicalSupport
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<GL_SupportContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddControllersWithViews();
 
 
@@ -62,6 +69,10 @@ namespace TechnicalSupport
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            //app.SetBasePath(env.ContentRootPath);
+            //app.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            //app.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             app.UseEndpoints(endpoints =>
             {
