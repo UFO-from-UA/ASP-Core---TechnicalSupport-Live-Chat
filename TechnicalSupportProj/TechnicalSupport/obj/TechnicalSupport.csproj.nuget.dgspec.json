@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\яЯя\\ВСЕ\\GL\\PROJ\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
+    "C:\\Users\\Lv\\Documents\\BaseCamp\\LIVE-CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
   },
   "projects": {
-    "E:\\яЯя\\ВСЕ\\GL\\PROJ\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {
+    "C:\\Users\\Lv\\Documents\\BaseCamp\\LIVE-CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\яЯя\\ВСЕ\\GL\\PROJ\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+        "projectUniqueName": "C:\\Users\\Lv\\Documents\\BaseCamp\\LIVE-CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
         "projectName": "TechnicalSupport",
-        "projectPath": "E:\\яЯя\\ВСЕ\\GL\\PROJ\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
-        "packagesPath": "C:\\Users\\Митя\\.nuget\\packages\\",
-        "outputPath": "E:\\яЯя\\ВСЕ\\GL\\PROJ\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
+        "projectPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\LIVE-CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+        "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\LIVE-CHAT\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Митя\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
