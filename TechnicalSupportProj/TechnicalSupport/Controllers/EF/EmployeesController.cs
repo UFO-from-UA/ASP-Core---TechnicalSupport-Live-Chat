@@ -12,9 +12,9 @@ namespace TechnicalSupport.Controllers.EF
 {
     public class EmployeesController : Controller
     {
-        private readonly GL_SupportContext _context;
+        private readonly SupportContext _context;
 
-        public EmployeesController(GL_SupportContext context)
+        public EmployeesController(SupportContext context)
         {
             _context = context;
         }

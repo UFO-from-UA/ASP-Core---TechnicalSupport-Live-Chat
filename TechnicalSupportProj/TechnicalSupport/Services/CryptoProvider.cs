@@ -10,7 +10,13 @@ namespace TechnicalSupport.Services
 {
     public class CryptoProvider : ICryptoProvider
     {
-        public byte[] GetPasswordHash(string str_password, byte[]  l_salt ,byte[] g_salt)
+        private readonly byte[] g_salt;
+        public CryptoProvider()
+        {
+            //set g_salt
+        }
+
+        public byte[] GetPasswordHash(string str_password, byte[]  l_salt)
         {
             byte[] pass_bytes = Encoding.UTF8.GetBytes(str_password);
 

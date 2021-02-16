@@ -10,13 +10,13 @@ namespace TechnicalSupport.Models
         public Sex()
         {
             Employees = new HashSet<Employee>();
-            Users = new HashSet<User>();
+            Users = new HashSet<Client>();
         }
 
         public int SexId { get; set; }
         public string Sex1 { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Client> Users { get; set; }
     }
 }

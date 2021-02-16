@@ -1,4 +1,4 @@
-﻿@model TechnicalSupport.Models.User
+﻿@model TechnicalSupport.Models.Client
 
 @{
     ViewData["Title"] = "Details";
@@ -11,10 +11,10 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserGuid)
+            @Html.DisplayNameFor(model => model.ClientGuid)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserGuid)
+            @Html.DisplayFor(model => model.ClientGuid)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
@@ -73,6 +73,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.ClientGuid">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

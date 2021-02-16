@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace TechnicalSupport.Services
 {
-    interface ICryptoProvider
+    public interface ICryptoProvider
     {
-        byte[] GetPasswordHash(string str_password, byte[] l_salt, byte[] g_salt);
+        byte[] GetPasswordHash(string str_password, byte[] l_salt);
         byte[] GetRandomSaltString(int str_length);
         byte[] GetSHA256Hash(byte[] target);
     }

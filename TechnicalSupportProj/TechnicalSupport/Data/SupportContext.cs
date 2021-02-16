@@ -9,29 +9,36 @@ using System.Configuration;
 
 namespace TechnicalSupport.Data
 {
-    public partial class GL_SupportContext : DbContext
+    public partial class SupportContext : DbContext
     {
         //public GL_SupportContext()
         //{
         //}
 
-        public GL_SupportContext(DbContextOptions<GL_SupportContext> options)
+        public SupportContext(DbContextOptions<SupportContext> options)
             : base(options)
         {
         }
+
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Client> Clients { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+
+
 
         public virtual DbSet<Application> Applications { get; set; }
         public virtual DbSet<Chat> Chats { get; set; }
         public virtual DbSet<CommunicationType> CommunicationTypes { get; set; }
         public virtual DbSet<Detail> Details { get; set; }
-        public virtual DbSet<Employee> Employees { get; set; }
+        
         public virtual DbSet<RequestType> RequestTypes { get; set; }
         public virtual DbSet<Sex> Sexes { get; set; }
         public virtual DbSet<Status> Statuses { get; set; }
-        public virtual DbSet<Task> Tasks { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<EmployeeTask> Tasks { get; set; }
         public virtual DbSet<WorkTime> WorkTimes { get; set; }
 
+
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -187,7 +194,7 @@ namespace TechnicalSupport.Data
                     .HasColumnName("Status");
             });
 
-            modelBuilder.Entity<Task>(entity =>
+            modelBuilder.Entity<EmployeeTask>(entity =>
             {
                 entity.ToTable("Task");
 
@@ -203,12 +210,12 @@ namespace TechnicalSupport.Data
                     .HasConstraintName("FK_Task_GUIDEmployy");
             });
 
-            modelBuilder.Entity<User>(entity =>
+            modelBuilder.Entity<Client>(entity =>
             {
                 entity.ToTable("User");
 
-                entity.HasIndex(e => e.UserGuid, "IX_UserGUID")
-                    .IsUnique();
+                //entity.HasIndex(e => e.UserGuid, "IX_UserGUID")
+                //    .IsUnique();
 
                 entity.Property(e => e.Email).HasMaxLength(100);
 
@@ -222,9 +229,9 @@ namespace TechnicalSupport.Data
 
                 entity.Property(e => e.SecondName).HasMaxLength(100);
 
-                entity.Property(e => e.UserGuid)
-                    .HasColumnName("UserGUID")
-                    .HasDefaultValueSql("(newid())");
+                //entity.Property(e => e.UserGuid)
+                //    .HasColumnName("UserGUID")
+                //    .HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.UserIp).HasMaxLength(100);
 

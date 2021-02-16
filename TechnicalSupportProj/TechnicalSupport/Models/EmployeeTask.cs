@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TechnicalSupport.Models
 {
-    public partial class Task
+    public partial class EmployeeTask
     {
         public int TaskId { get; set; }
         public int TaskCount { get; set; }

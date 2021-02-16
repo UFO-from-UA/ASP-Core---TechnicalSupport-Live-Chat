@@ -11,13 +11,13 @@ namespace TechnicalSupport.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private GL_SupportContext _db;
+        private SupportContext _db;
         
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
             //Сделать контроллер где  будет бд
-            _db = new GL_SupportContext(new Microsoft.EntityFrameworkCore.DbContextOptions<GL_SupportContext>());
+            _db = new SupportContext(new Microsoft.EntityFrameworkCore.DbContextOptions<SupportContext>());
         }
 
         public IActionResult Index()

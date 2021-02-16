@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-
-#nullable disable
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace TechnicalSupport.Models
 {
-    public partial class User
+    public class User
     {
         public int UserId { get; set; }
-        public Guid UserGuid { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string SecondName { get; set; }
-        public int? Age { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string UserIp { get; set; }
-        public int? Sex { get; set; }
+        public int RoleName { get; set; }
+        // 0 user
+        // 1 client
+        // 2 admin =
+        public int RoleId { get; set; }
 
-        public byte[] PasswordHash { get; set; }
-        public byte[] LocalHash { get; set; }
-        public virtual Sex SexNavigation { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }
