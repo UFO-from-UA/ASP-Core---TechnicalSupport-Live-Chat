@@ -7103,11 +7103,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
       "projectName": "TechnicalSupport",
       "projectPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
       "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+      "projectName": "TechnicalSupport",
+      "projectPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+      "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
+>>>>>>> Volynets
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

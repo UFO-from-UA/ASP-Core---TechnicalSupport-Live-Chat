@@ -388,6 +388,7 @@ C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSuppor
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.pdb
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\lib\aspnet\signalr\dist\browser\signalr.js
+<<<<<<< HEAD
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\js\signalr\dist\browser\signalr.min.js
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.json
@@ -778,3 +779,5 @@ C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSuppor
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.dll
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.pdb
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
+=======
+>>>>>>> Volynets

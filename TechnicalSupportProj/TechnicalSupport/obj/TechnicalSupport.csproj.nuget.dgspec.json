@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
         "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
+=======
+    "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+        "projectName": "TechnicalSupport",
+        "projectPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+        "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
+>>>>>>> Volynets
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

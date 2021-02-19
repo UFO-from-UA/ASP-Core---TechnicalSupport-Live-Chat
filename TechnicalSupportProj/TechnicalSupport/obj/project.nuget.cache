@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "D04EBaf8Jk68PLfbV3TjuGzfoBRm0BlQInDSVKd5C7dqYJwUdSSbt8Q6Ixn0ml+UKyelMr+A8tHCNMQVSTSCRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+=======
+  "dgSpecHash": "NHzm+ajURRTPdFQugRn2zwUj1n91nb/g1B2STrJMETOjn4P1qp/BHseqJnc2asqnzmSnExg59mwpJGiSJD9ZUg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
+>>>>>>> Volynets
   "expectedPackageFiles": [
     "C:\\Users\\Lv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lv\\.nuget\\packages\\microsoft.aspnet.signalr.core\\2.4.1\\microsoft.aspnet.signalr.core.2.4.1.nupkg.sha512",
