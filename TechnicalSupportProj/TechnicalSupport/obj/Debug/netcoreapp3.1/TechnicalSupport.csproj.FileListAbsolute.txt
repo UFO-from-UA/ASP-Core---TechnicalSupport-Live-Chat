@@ -389,6 +389,7 @@ C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSuppor
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\lib\aspnet\signalr\dist\browser\signalr.js
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.csprojAssemblyReference.cache
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.AssemblyInfoInputs.cache
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.AssemblyInfo.cs
@@ -794,6 +795,8 @@ C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\De
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Account\_Layout.cshtml.g.cs
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Volynets
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\js\signalr\dist\browser\signalr.min.js
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.json
@@ -1186,4 +1189,7 @@ C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSuppor
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
 =======
 >>>>>>> Volynets
+<<<<<<< HEAD
 >>>>>>> 0e59600219ec2d9b273093ba16c28b1a4d141090
+=======
+>>>>>>> Volynets
