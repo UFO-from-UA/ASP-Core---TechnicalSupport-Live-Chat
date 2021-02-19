@@ -388,8 +388,6 @@ C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSuppor
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.pdb
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
 C:\Users\Lv\Documents\BaseCamp\Support-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\lib\aspnet\signalr\dist\browser\signalr.js
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.csprojAssemblyReference.cache
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.AssemblyInfoInputs.cache
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.AssemblyInfo.cs
@@ -793,12 +791,8 @@ C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\De
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\my_Layout.cshtml.g.cs
 C:\Users\Lv\Documents\BaseCamp\CHAT\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Account\_Layout.cshtml.g.cs
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Volynets
-C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\wwwroot\js\signalr\dist\browser\signalr.min.js
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\bin\Debug\netcoreapp3.1\TechnicalSupport.exe
@@ -1173,11 +1167,24 @@ C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSuppor
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.RazorCoreGenerate.cache
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Account\_Layout.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Create.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Delete.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Details.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Edit.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Index.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\my_Layout.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Chat.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.RazorTargetAssemblyInfo.cache
@@ -1187,9 +1194,3 @@ C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSuppor
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.dll
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.pdb
 C:\Users\Lv\Documents\Kraken\ASP-Core_TechnicalSupport-Live-Chat\TechnicalSupportProj\TechnicalSupport\obj\Debug\netcoreapp3.1\TechnicalSupport.genruntimeconfig.cache
-=======
->>>>>>> Volynets
-<<<<<<< HEAD
->>>>>>> 0e59600219ec2d9b273093ba16c28b1a4d141090
-=======
->>>>>>> Volynets

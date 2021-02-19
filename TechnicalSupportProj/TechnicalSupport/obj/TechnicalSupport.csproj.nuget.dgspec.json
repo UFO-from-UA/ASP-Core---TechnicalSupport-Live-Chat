@@ -1,13 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\Lv\\Documents\\BaseCamp\\CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Volynets
     "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
   },
   "projects": {
@@ -19,38 +12,6 @@
         "projectPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
         "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lv\\Documents\\Kraken\\ASP-Core_TechnicalSupport-Live-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
-=======
-    "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {}
-<<<<<<< HEAD
->>>>>>> 0e59600219ec2d9b273093ba16c28b1a4d141090
-  },
-  "projects": {
-    "C:\\Users\\Lv\\Documents\\BaseCamp\\CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Lv\\Documents\\BaseCamp\\CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
-        "projectName": "TechnicalSupport",
-        "projectPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\CHAT\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
-        "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
-<<<<<<< HEAD
-        "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\CHAT\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
-=======
-        "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
->>>>>>> Volynets
->>>>>>> 0e59600219ec2d9b273093ba16c28b1a4d141090
-=======
-  },
-  "projects": {
-    "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
-        "projectName": "TechnicalSupport",
-        "projectPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\TechnicalSupport.csproj",
-        "packagesPath": "C:\\Users\\Lv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lv\\Documents\\BaseCamp\\Support-Chat\\TechnicalSupportProj\\TechnicalSupport\\obj\\",
->>>>>>> Volynets
->>>>>>> Volynets
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
