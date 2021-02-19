@@ -19,6 +19,77 @@ namespace TechnicalSupport.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.2");
 
+            modelBuilder.Entity("TechnicalSupport.Models.Application", b =>
+                {
+                    b.Property<int>("ApplicationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Chat")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("StatusNavigationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Topic")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ApplicationId");
+
+                    b.HasIndex("StatusNavigationId");
+
+                    b.ToTable("Applications");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.Client", b =>
+                {
+                    b.Property<int>("ClientId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("ClientGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("LocalHash")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SecondName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SexId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserIp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ClientId");
+
+                    b.ToTable("Clients");
+                });
+
             modelBuilder.Entity("TechnicalSupport.Models.Dialog", b =>
                 {
                     b.Property<Guid>("DialogId")
@@ -46,7 +117,16 @@ namespace TechnicalSupport.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int?>("Age")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -55,17 +135,57 @@ namespace TechnicalSupport.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SecondName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SexId")
                         .HasColumnType("int");
 
                     b.Property<bool>("StatusOnline")
                         .HasColumnType("bit");
 
+                    b.Property<int>("WorkTime")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("WorkTimeNavigationId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
 
+                    b.HasIndex("WorkTimeNavigationId");
+
                     b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.EmployeeTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<Guid>("Guidemployy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("GuidemployyNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("TaskCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GuidemployyNavigationId");
+
+                    b.ToTable("Tasks");
                 });
 
             modelBuilder.Entity("TechnicalSupport.Models.Message", b =>
@@ -115,6 +235,18 @@ namespace TechnicalSupport.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "user"
+                        });
                 });
 
             modelBuilder.Entity("TechnicalSupport.Models.Status", b =>
@@ -128,6 +260,9 @@ namespace TechnicalSupport.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status1")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -161,6 +296,56 @@ namespace TechnicalSupport.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("26be7a6e-8e5f-4dd4-8346-0c40bbbeca28"),
+                            Email = "admin@mail.com",
+                            Password = "123456",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("a23447f3-aff9-4488-8d5b-49aa91c25dc3"),
+                            Email = "bob@mail.com",
+                            Password = "123456",
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            Id = new Guid("82703972-0242-48f0-a2e4-77dd30e387fe"),
+                            Email = "sam@mail.com",
+                            Password = "123456",
+                            RoleId = 2
+                        });
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.WorkTime", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<TimeSpan>("From")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("To")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WorkTimes");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.Application", b =>
+                {
+                    b.HasOne("TechnicalSupport.Models.Status", "StatusNavigation")
+                        .WithMany("Applications")
+                        .HasForeignKey("StatusNavigationId");
+
+                    b.Navigation("StatusNavigation");
                 });
 
             modelBuilder.Entity("TechnicalSupport.Models.Dialog", b =>
@@ -188,7 +373,22 @@ namespace TechnicalSupport.Migrations
                         .WithMany()
                         .HasForeignKey("RoleId");
 
+                    b.HasOne("TechnicalSupport.Models.WorkTime", "WorkTimeNavigation")
+                        .WithMany("Employees")
+                        .HasForeignKey("WorkTimeNavigationId");
+
                     b.Navigation("Role");
+
+                    b.Navigation("WorkTimeNavigation");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.EmployeeTask", b =>
+                {
+                    b.HasOne("TechnicalSupport.Models.Employee", "GuidemployyNavigation")
+                        .WithMany("Tasks")
+                        .HasForeignKey("GuidemployyNavigationId");
+
+                    b.Navigation("GuidemployyNavigation");
                 });
 
             modelBuilder.Entity("TechnicalSupport.Models.Message", b =>
@@ -227,9 +427,24 @@ namespace TechnicalSupport.Migrations
                     b.Navigation("Status");
                 });
 
+            modelBuilder.Entity("TechnicalSupport.Models.Employee", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
             modelBuilder.Entity("TechnicalSupport.Models.Role", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.Status", b =>
+                {
+                    b.Navigation("Applications");
+                });
+
+            modelBuilder.Entity("TechnicalSupport.Models.WorkTime", b =>
+                {
+                    b.Navigation("Employees");
                 });
 #pragma warning restore 612, 618
         }

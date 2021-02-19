@@ -33,10 +33,10 @@ namespace TechnicalSupport
         {
 
 
-         
 
+            message.SenderType = "out";
 
-                var dialog = _context.Dialogs.FirstOrDefault(em => em.UserId.ToString() == Context.UserIdentifier);
+            var dialog = _context.Dialogs.FirstOrDefault(em => em.UserId.ToString() == Context.UserIdentifier);
 
                 if (dialog == null)
                 {
@@ -63,13 +63,14 @@ namespace TechnicalSupport
                 else
                 {
                 message.DialogId = dialog.DialogId;
+                
 
                 await Clients.User(dialog.EmployeeId.ToString()).SendAsync("Receive", message);
                 }
-              
 
-               
-                await Clients.User(Context.UserIdentifier.ToString()).SendAsync("Receive", message);
+            message.SenderType = "in";
+
+            await Clients.User(Context.UserIdentifier.ToString()).SendAsync("Receive", message);
            
            
           
@@ -114,7 +115,7 @@ namespace TechnicalSupport
                 var dialog = _context.Dialogs.Find(message.DialogId);
                 if (dialog != null)
                 {
-
+                    message.SenderType = "out";
                     await Clients.User(dialog.UserId.ToString()).SendAsync("Receive", message);
                
                 }

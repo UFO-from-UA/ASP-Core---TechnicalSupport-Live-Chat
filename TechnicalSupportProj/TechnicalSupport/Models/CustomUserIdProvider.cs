@@ -17,9 +17,17 @@ namespace TechnicalSupport.Models
 
     public class CustomUserIdProvider : IUserIdProvider
     {
+        public static ChatContext _chatContext;
 
-   
-      
+     
+        public CustomUserIdProvider (ChatContext db)
+        {
+            
+            _chatContext = db;
+
+        
+        }
+
         public virtual string GetUserId(HubConnectionContext connection)
         {
 
@@ -31,9 +39,13 @@ namespace TechnicalSupport.Models
                 // string t = userDichtionary.Keys.FirstOrDefault(s => s.Contains(connection.User?.Identity.Name));
                 // string t = MessageHub._context.Users.FirstOrDefault(s => s.Email == connection.User.Identity.Name.ToString()).Id.ToString();
                 // string t = userDichtionary.Where((d, v) => d.Key.Contains(connection.User.Identity.Name.ToString())).Select(v => v.Values).ToList();
-                string t = userDichtionary[connection.User?.Identity.Name].ToString();
+                var user = _chatContext.Users.FirstOrDefault(s => s.Email == connection.User.Identity.Name);
+              Guid id = user?.Id ?? _chatContext.Employees.FirstOrDefault(s => s.Email == connection.User.Identity.Name).Id;
 
-                return t;
+
+              //  string t = userDichtionary[connection.User?.Identity.Name].ToString();
+
+                return id.ToString();
 
             }
 

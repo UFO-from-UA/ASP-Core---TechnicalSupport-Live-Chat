@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TechnicalSupport.Data;
 using TechnicalSupport.Models;
 
 namespace TechnicalSupport
@@ -15,8 +16,7 @@ namespace TechnicalSupport
     {
         public static void Main(string[] args)
         {
-            GlobalHost.DependencyResolver.Register(typeof(IUserIdProvider), () => new CustomUserIdProvider());
-
+       
             CreateHostBuilder(args).Build().Run();
         }
 

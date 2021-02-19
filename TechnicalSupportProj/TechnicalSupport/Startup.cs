@@ -37,12 +37,33 @@ namespace TechnicalSupport
             string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SupportChat;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
-            services.AddDbContext<ChatContext>(options => options.UseSqlServer(connection));
-           
-            services.AddScoped<ChatContext>();
+            services.AddDbContext<ChatContext>(options => options.UseSqlServer(connection),
+                 ServiceLifetime.Singleton
+                );
+
+      
+
+            services.AddSingleton<IUserIdProvider, CustomUserIdProvider>(sp=>
+            {
+                using (var scope = sp.CreateScope())
+                {
+                    var dbContext = scope.ServiceProvider.GetService<ChatContext>();
+                    //  var dbContext = serviceProvider.GetRequiredService<ChatContext>();
+
+                    //   return ActivatorUtilities.CreateInstance<CustomUserIdProvider>(serviceProvider);
+                    return new CustomUserIdProvider(dbContext);
+                }
+            }
+
+                
+                );
+
+        
 
 
-            services.AddSingleton<IUserIdProvider, CustomUserIdProvider>();
+
+
+
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
              .AddCookie(options =>
@@ -66,8 +87,7 @@ namespace TechnicalSupport
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            var idProvider = new CustomUserIdProvider();
-          
+         
 
 
             if (env.IsDevelopment())
@@ -100,4 +120,11 @@ namespace TechnicalSupport
             });
         }
     }
-}
+
+
+    }
+
+
+
+
+

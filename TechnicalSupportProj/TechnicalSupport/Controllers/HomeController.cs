@@ -20,25 +20,13 @@ namespace TechnicalSupport.Controllers
         {
             _context = context;
 
-            useremail = new Dictionary<string, string>();
-            foreach (var t in _context.Employees)
-            {
-                useremail.Add(t.Email, t.Id.ToString());
-
-            }
-
-            foreach (var t in _context.Users)
-            {
-                if(t.Email!=null)
-                useremail.Add(t.Email, t.Id.ToString());
-
-            }
-
         }
 
         public IActionResult Index()
         {
-            return RedirectToAction("Index", "Account");
+            return View();
+
+           // return RedirectToAction("Index", "Account");
 
         }
 
